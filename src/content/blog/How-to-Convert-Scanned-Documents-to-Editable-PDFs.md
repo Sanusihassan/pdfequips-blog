@@ -2,7 +2,7 @@
 title: 'How to Convert Scanned Documents to Editable PDFs'
 description: 'Learn how to easily transform scanned documents into editable PDF files using OCR technology'
 pubDate: 'Jul 11 2024'
-heroImage: '/blog-placeholder-scanned-document.jpg'
+heroImage: '/How-to-Convert-Scanned-Documents-to-Editable-PDFs.png'
 ---
 
 
