@@ -2,7 +2,7 @@
 title: 'How to Convert image files to pdfs'
 description: 'Convert multiple image files to pdfs using this free online photo to pdf converter'
 pubDate: 'Jul 08 2022'
-heroImage: '/pdf-to-image2.png'
+heroImage: '/images/blog/pdf-to-image2.png'
 ---
 
 
