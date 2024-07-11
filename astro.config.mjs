@@ -8,5 +8,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: 'https://www.pdfequips.com',
   integrations: [mdx(), sitemap(), react()],
-  base: "blog"
+  base: import.meta.env.PROD ? "blog" : ""
 });

@@ -2,7 +2,7 @@
 title: 'Top 10 PDF Conversion Tools in 2024'
 description: 'Discover the best PDF conversion tools of 2024, including online and desktop options for all your document needs'
 pubDate: 'Jul 11 2024'
-heroImage: '/blog-placeholder-pdf-tools.jpg'
+heroImage: '/images/blog/Top-10-PDF-Conversion-Tools-in-2024.png'
 ---
 
 # Top 10 PDF Conversion Tools in 2024

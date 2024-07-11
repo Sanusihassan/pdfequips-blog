@@ -2,7 +2,7 @@
 title: 'Troubleshooting Common PDF Conversion Errors'
 description: 'Learn how to identify and resolve frequent issues encountered during PDF conversion processes'
 pubDate: 'Jul 11 2024'
-heroImage: '/blog-placeholder-pdf-errors.jpg'
+heroImage: '/images/blog/Troubleshooting-Common-PDF-Conversion-Errors.png'
 ---
 
 # Troubleshooting Common PDF Conversion Errors
