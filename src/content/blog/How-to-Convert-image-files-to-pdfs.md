@@ -33,5 +33,5 @@ You can also use the [image to pdf](https://www.pdfequips.com/image-to-pdf) conv
 
 ###### Lost in the complex landscape of PDF tools?
 It's time to find your way! 
-With our tools, you're not limited to just merging photos into PDFs. Dive into our [range of PDF solutions](http://www.pdfequips.com/) and uncover all the tricks to assist you with document management and file conversion. Explore the full potential of our offerings and optimize your workflow like a pro!
+With our tools, you're not limited to just merging photos into PDFs. Dive into our [range of PDF solutions](https://www.pdfequips.com/) and uncover all the tricks to assist you with document management and file conversion. Explore the full potential of our offerings and optimize your workflow like a pro!
 
