@@ -83,10 +83,17 @@ const posts = (await getCollection("blog")).sort(
 					font-size: 1.563em;
 				}
 			}
+			h1 {
+				font-weight: 400;
+				font-size: 3rem;
+				font-size: clamp(1rem, 2vw + 2rem, 3.5rem);
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
 		<Header />
+		<h1>PDFEquips blog</h1>
 		<main>
 			<section>
 				<ul>
@@ -98,7 +105,7 @@ const posts = (await getCollection("blog")).sort(
 										width={720}
 										height={360}
 										src={post.data.heroImage}
-										alt=""
+										alt={post.data.description}
 									/>
 									<p class="title">{post.data.title}</p>
 									<p class="date">
