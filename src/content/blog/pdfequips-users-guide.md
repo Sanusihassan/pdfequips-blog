@@ -2,7 +2,7 @@
 title: 'How to use PDFEquips: Step-by-step instructions'
 description: 'All the help you need to simplify your PDF tasks with online PDF management tools.'
 pubDate: 'Mar 28 2024'
-heroImage: '/pdfequips-users-guide.svg'
+heroImage: '/images/blog/How-to-use-PDFEquips.png'
 ---
 
 Do you know what's frustrating? You try to work with PDF files and feel like you're hitting a brick wall. But guess what? You're in for a treat! Whether you want to merge it, split it up, arrange it, or spruce it up, we've got you covered. This evidence? It's your golden ticket to mastering our tools step by step. And that's the important point - our tools are extremely fast, safe and iron-clad. Your important documents? With us you are in safe hands. So, let's roll up our sleeves and tackle these PDFs head on!

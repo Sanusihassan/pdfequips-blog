@@ -2,7 +2,7 @@
 title: 'Step-by-Step Guide: Merging Multiple PDFs into One Document'
 description: 'Learn how to easily combine multiple PDF files into a single document using PDFEquips'
 pubDate: 'Jul 11 2024'
-heroImage: '/blog-placeholder-pdf-merge.jpg'
+heroImage: '/images/blog/Merging-Multiple-PDFs-into-One-Document.png'
 ---
 
 # Step-by-Step Guide: Merging Multiple PDFs into One Document
