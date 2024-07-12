@@ -60,3 +60,16 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={new URL(image, Astro.url)} />
+
+<script async src={`https://www.googletagmanager.com/gtag/js?id=G-NY5F91MF0B`}
+></script>
+<script type="text/javascript" is:inline>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
+	gtag("config", "G-NY5F91MF0B");
+</script>
+
+<meta name="google-adsense-account" content="ca-pub-7391414384206267" />
