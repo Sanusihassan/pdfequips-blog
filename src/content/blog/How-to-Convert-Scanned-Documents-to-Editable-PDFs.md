@@ -5,9 +5,6 @@ pubDate: 'Jul 11 2024'
 heroImage: '/images/blog/How-to-Convert-Scanned-Documents-to-Editable-PDFs.png'
 ---
 
-
-# How to Convert Scanned Documents to Editable PDFs
-
 In today's digital age, having the ability to edit and manipulate PDF documents is crucial. However, scanned documents often present a challenge as they are essentially images, making them non-editable. This is where Optical Character Recognition (OCR) technology comes to the rescue. In this guide, we'll walk you through the process of converting scanned documents to editable PDFs using OCR.
 
 ## What is OCR?

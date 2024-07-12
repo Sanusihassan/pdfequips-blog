@@ -5,7 +5,6 @@ pubDate: 'Jul 11 2024'
 heroImage: '/images/blog/How-to-Convert-PDFs-for-Free.png'
 ---
 
-# How to Convert PDFs for Free: A Comprehensive Guide
 
 PDF (Portable Document Format) is a widely used file format for sharing documents while preserving their formatting. However, there are times when you need to convert PDFs to other formats or vice versa. This guide will walk you through various free methods and tools to accomplish these conversions.
 

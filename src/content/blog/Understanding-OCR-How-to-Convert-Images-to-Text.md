@@ -5,8 +5,6 @@ pubDate: 'Jul 11 2024'
 heroImage: '/images/blog/How-to-Convert-Images-to-Text.png'
 ---
 
-# Understanding OCR: How to Convert Images to Text
-
 In today's digital age, the ability to extract text from images has become increasingly important. Whether you're dealing with scanned documents, photos of text, or screenshots, Optical Character Recognition (OCR) technology can help you convert these images into editable and searchable text. In this guide, we'll explore what OCR is, how it works, and how you can use it to convert images to text.
 
 ## What is OCR?

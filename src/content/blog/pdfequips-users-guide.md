@@ -51,7 +51,7 @@ Follow these steps to add numbering to the pages of your PDF
 * Hit 'Number PDF' button to proceed.
 * Download or save your numbered PDF.
 
-# Add Watermark
+#### Add Watermark
 To add Watermark to you pdf file
 * Go to the [Add Watermark](https://www.pdfequips.com/add-watermark) page.
 * Choose the PDF file you want to add your watermark to.
@@ -72,7 +72,7 @@ Convert JPG, Word, PowerPoint, Excel, HTML, or other formats to PDF.
 * Download or save your converted PDF.
 
 
-# Convert from PDF
+#### Convert from PDF
 Convert PDF files to different file formats easily
 Convert PDF to JPG, Word, PowerPoint, Excel, or other formats.
 * Drag and drop files or click the Select *[format]* Files button.
