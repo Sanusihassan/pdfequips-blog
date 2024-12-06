@@ -1,7 +1,7 @@
 ---
 title: 'Best Practices for Digital Document Storage'
 description: 'Learn how to effectively organize, secure, and manage your digital documents for optimal accessibility and longevity'
-pubDate: 'Jul 11 2024'
+pubDate: '2024-07-10T21:00:00.000Z'
 heroImage: '/images/blog/Best-Practices-for-Digital-Document-Storage.png'
 ---
 

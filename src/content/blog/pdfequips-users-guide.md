@@ -1,7 +1,7 @@
 ---
 title: 'How to use PDFEquips: Step-by-step instructions'
 description: 'All the help you need to simplify your PDF tasks with online PDF management tools.'
-pubDate: 'Mar 28 2024'
+pubDate: '2024-03-27T22:00:00.000Z'
 heroImage: '/images/blog/How-to-use-PDFEquips.png'
 ---
 

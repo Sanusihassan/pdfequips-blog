@@ -1,7 +1,7 @@
 ---
 title: 'The Benefits of Using PDFs in Business'
 description: 'Discover why PDFs are an essential tool for modern businesses and how they can streamline your document workflows'
-pubDate: 'Jul 11 2024'
+pubDate: '2024-07-10T21:00:00.000Z'
 heroImage: '/images/blog/The-Benefits-of-Using-PDFs-in-Business.png'
 ---
 

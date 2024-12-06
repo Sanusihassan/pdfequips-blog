@@ -16,7 +16,7 @@ export default defineConfig({
       include: ['fetch-subscription-status', 'react-icons'],
     },
     ssr: {
-      noExternal: ['fetch-subscription-status', 'react-icons']
+      noExternal: ['fetch-subscription-status', 'react-icons', 'pdfequips-navbar']
     }
   },
   site: 'https://www.pdfequips.com',

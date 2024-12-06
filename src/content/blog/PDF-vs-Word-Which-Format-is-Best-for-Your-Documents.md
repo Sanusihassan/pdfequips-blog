@@ -1,7 +1,7 @@
 ---
 title: 'PDF vs. Word: Which Format is Best for Your Documents?'
 description: 'Explore the pros and cons of PDF and Word formats to determine which is best suited for your document needs'
-pubDate: 'Jul 11 2024'
+pubDate: '2024-07-10T21:00:00.000Z'
 heroImage: '/images/blog/PDF-vs.-Word-Which-Format-is-Best-for-Your-Documents.png'
 ---
 

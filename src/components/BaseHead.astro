@@ -65,7 +65,9 @@ import { fetchSubscriptionStatus } from "fetch-subscription-status";
 
 <script define:vars={fetchSubscriptionStatus}>
 	document.addEventListener("DOMContentLoaded", async () => {
-		const status = await fetchSubscriptionStatus();
+		const status = (await fetchSubscriptionStatus)
+			? fetchSubscriptionStatus()
+			: false;
 		if (!status) {
 			const head = document.head;
 
@@ -97,26 +99,3 @@ import { fetchSubscriptionStatus } from "fetch-subscription-status";
 	title="PDFEquips Blog RSS Feed"
 	href="/blog/rss.xml"
 /> -->
-
-<script define:vars="{fetchSubscriptionStatus}">
-	document.addEventListener("DOMContentLoaded", async () => {
-		const status = await fetchSubscriptionStatus();
-		if (!status) {
-			const head = document.head;
-
-			// Create and append meta tag
-			const metaTag = document.createElement("meta");
-			metaTag.name = "google-adsense-account";
-			metaTag.content = "ca-pub-7391414384206267";
-			head.appendChild(metaTag);
-
-			// Create and append script tag
-			const scriptTag = document.createElement("script");
-			scriptTag.async = true;
-			scriptTag.src =
-				"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7391414384206267";
-			scriptTag.crossOrigin = "anonymous";
-			head.appendChild(scriptTag);
-		}
-	});
-</script>

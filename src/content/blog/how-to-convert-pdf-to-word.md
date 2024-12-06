@@ -1,7 +1,7 @@
 ---
 title: 'How to Convert PDF files to word'
 description: 'Easily create editable documents from any PDF file with just one click.'
-pubDate: 'Jul 08 2022'
+pubDate: '2022-07-07T22:00:00.000Z'
 heroImage: '/images/blog/How-to-Convert-PDF-files-to-word.png'
 ---
 

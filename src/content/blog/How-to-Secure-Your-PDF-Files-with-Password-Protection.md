@@ -1,7 +1,7 @@
 ---
 title: 'How to Secure Your PDF Files with Password Protection'
 description: 'Learn how to add password protection to your PDF files to enhance document security and control access'
-pubDate: 'Jul 11 2024'
+pubDate: '2024-07-10T21:00:00.000Z'
 heroImage: '/images/blog/How-to-Secure-Your-PDF-Files-with-Password-Protection.png'
 ---
 

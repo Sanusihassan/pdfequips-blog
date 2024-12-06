@@ -1,7 +1,7 @@
 ---
 title: 'Understanding OCR: How to Convert Images to Text'
 description: 'Learn about Optical Character Recognition (OCR) technology and how to use it to convert images to editable text'
-pubDate: 'Jul 11 2024'
+pubDate: '2024-07-10T21:00:00.000Z'
 heroImage: '/images/blog/How-to-Convert-Images-to-Text.png'
 ---
 

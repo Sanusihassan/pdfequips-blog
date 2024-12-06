@@ -1,7 +1,7 @@
 ---
 title: 'How to Convert PDFs for Free: A Comprehensive Guide'
 description: 'Learn about various methods and tools to convert PDFs to other formats and vice versa, all without spending a dime'
-pubDate: 'Jul 11 2024'
+pubDate: '2024-07-10T21:00:00.000Z'
 heroImage: '/images/blog/How-to-Convert-PDFs-for-Free.png'
 ---
 
