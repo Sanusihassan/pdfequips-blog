@@ -4,16 +4,14 @@
 import "../styles/global.css";
 
 interface Props {
-	title: string;
-	description: string;
-	image?: string;
+  title: string;
+  description: string;
+  image?: string;
 }
 
 // const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
-// @ts-ignore
-import { fetchSubscriptionStatus } from "fetch-subscription-status";
 ---
 
 <!-- Global Metadata -->
@@ -26,8 +24,8 @@ import { fetchSubscriptionStatus } from "fetch-subscription-status";
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 <link
-	href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-	rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
 />
 
 <!-- Primary Meta Tags -->
@@ -55,47 +53,116 @@ import { fetchSubscriptionStatus } from "fetch-subscription-status";
 <script async src={`https://www.googletagmanager.com/gtag/js?id=G-NY5F91MF0B`}
 ></script>
 <script type="text/javascript" is:inline>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag("js", new Date());
-	gtag("config", "G-NY5F91MF0B");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-NY5F91MF0B");
 </script>
+<script is:inline>
+  //   const endpoint = "";
 
-<script define:vars={fetchSubscriptionStatus}>
-	document.addEventListener("DOMContentLoaded", async () => {
-		const status = (await fetchSubscriptionStatus)
-			? fetchSubscriptionStatus()
-			: false;
-		if (!status) {
-			const head = document.head;
+  /**
+   * Get a cookie value by name
+   * @param {string} name - Cookie name
+   * @returns {string|undefined} Cookie value or undefined if not found
+   */
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) {
+      return parts.pop().split(";").shift();
+    }
+    return undefined;
+  }
 
-			// Create and append meta tag
-			const metaTag = document.createElement("meta");
-			metaTag.name = "google-adsense-account";
-			metaTag.content = "ca-pub-7391414384206267";
-			head.appendChild(metaTag);
+  /**
+   * Decode a JWT token (without verification)
+   * @param {string} token - JWT token
+   * @returns {object} Decoded payload
+   */
+  function decodeJwt(token) {
+    try {
+      const base64Url = token.split(".")[1];
+      const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+      const jsonPayload = decodeURIComponent(
+        atob(base64)
+          .split("")
+          .map((c) => "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2))
+          .join("")
+      );
+      return JSON.parse(jsonPayload);
+    } catch (error) {
+      throw new Error("Invalid token");
+    }
+  }
 
-			// Create and append script tag
-			const scriptTag = document.createElement("script");
-			scriptTag.async = true;
-			scriptTag.src =
-				"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7391414384206267";
-			scriptTag.crossOrigin = "anonymous";
-			head.appendChild(scriptTag);
-		}
-	});
+  /**
+   * Fetch subscription status from the API
+   * @returns {Promise<boolean>} Returns true if user has active subscription
+   */
+  async function fetchSubscriptionStatus() {
+    try {
+      // Check userInfo cookie
+      const userInfoStr = getCookie("userInfo");
+      if (userInfoStr) {
+        const userInfo = JSON.parse(decodeURIComponent(userInfoStr));
+        const response = await fetch(`/subscription/${userInfo.id}`, {
+          method: "GET",
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        return data.success && data.data?.status === "active";
+      }
+
+      // Fallback to userToken if userInfo is not available
+      const userToken = getCookie("userToken");
+      if (userToken) {
+        const decodedToken = decodeJwt(userToken);
+        const response = await fetch(`/subscription/${decodedToken.id}`, {
+          method: "GET",
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        return data.success && data.data?.status === "active";
+      }
+
+      // Default to non-premium if no valid cookies found
+      return false;
+    } catch (error) {
+      console.error("Error fetching subscription status:", error);
+      return false;
+    }
+  }
+  document.addEventListener("DOMContentLoaded", async () => {
+    const status = fetchSubscriptionStatus
+      ? await fetchSubscriptionStatus()
+      : false;
+    if (!status) {
+      const head = document.head;
+
+      // Create and append meta tag
+      const metaTag = document.createElement("meta");
+      metaTag.name = "google-adsense-account";
+      metaTag.content = "ca-pub-7801483217621867";
+      head.appendChild(metaTag);
+
+      // Create and append script tag
+      const scriptTag = document.createElement("script");
+      scriptTag.async = true;
+      scriptTag.src =
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7801483217621867";
+      scriptTag.crossOrigin = "anonymous";
+      head.appendChild(scriptTag);
+    }
+  });
 </script>
-<!-- 
-<meta name="google-adsense-account" content="ca-pub-7391414384206267" />
-<script
-	async
-	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7391414384206267"
-	cross-origin="anonymous"></script>
-<link
-	rel="alternate"
-	type="application/rss+xml"
-	title="PDFEquips Blog RSS Feed"
-	href="/blog/rss.xml"
-/> -->
